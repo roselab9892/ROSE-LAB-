@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rose Lab Diagnostics Health Care Centre</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header { background-color: #4CAF50; color: white; padding: 1rem 0; }
+    header .container { display: flex; justify-content: space-between; align-items: center; padding: 0 1rem; flex-wrap: wrap; }
+    header ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; }
+    header li { margin: 0 1rem; }
+    header a { color: white; text-decoration: none; font-weight: bold; }
+    .hero { background: url('https://via.placeholder.com/1200x400/4CAF50/ffffff?text=Welcome+to+Rose+Lab') no-repeat center center/cover; color: white; text-align: center; padding: 4rem 1rem; }
+    .hero h2 { font-size: 2.5rem; }
+    .btn { display: inline-block; background-color: white; color: #4CAF50; padding: 0.7rem 1.2rem; margin-top: 1rem; border-radius: 5px; text-decoration: none; font-weight: bold; }
+    section { padding: 2rem 1rem; }
+    .container { max-width: 1100px; margin: auto; }
+    h2 { color: #4CAF50; }
+    ul { padding-left: 1.2rem; }
+    footer { background-color: #333; color: white; text-align: center; padding: 1rem 0; }
+    .whatsapp-btn { position: fixed; bottom: 20px; right: 20px; background-color: #25d366; color: white; padding: 12px 16px; border-radius: 50px; font-weight: bold; text-decoration: none; box-shadow: 0 4px 8px rgba(0,0,0,0.2); z-index: 1000; }
+    iframe { width: 100%; border: 0; height: 300px; }
+    input, textarea { width: 100%; padding: 10px; margin: 5px 0 15px 0; border: 1px solid #ccc; border-radius: 4px; }
+    button { background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; }
+    button:hover { background-color: #45a049; }
+    @media (max-width: 768px) {
+      header .container { flex-direction: column; }
+      header ul { flex-direction: column; align-items: center; }
+      header li { margin: 0.5rem 0; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1>Rose Lab Diagnostics Health Care Centre</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Tests</a></li>
+        <li><a href="#booking">Book Test</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section id="home" class="hero">
+  <div class="container">
+    <h2>Welcome to Rose Lab Diagnostics</h2>
+    <p>Your trusted partner in accurate and fast diagnostic testing.</p>
+    <a href="#services" class="btn">View All Tests</a>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <h2>All Tests We Offer</h2>
+    <ul>
+      <li>✔ Complete Blood Count (CBC)</li>
+      <li>✔ Blood Sugar (Fasting/PP/RBS)</li>
+      <li>✔ Lipid Profile</li>
+      <li>✔ Liver Function Test (LFT)</li>
+      <li>✔ Kidney Function Test (KFT)</li>
+      <li>✔ Thyroid Profile (T3, T4, TSH)</li>
+      <li>✔ Vitamin D & B12</li>
+      <li>✔ Urine Routine & Microscopy</li>
+      <li>✔ COVID-19 RT-PCR</li>
+      <li>✔ Dengue, Malaria, Typhoid Tests</li>
+      <li>✔ HbA1c (Diabetes control)</li>
+      <li>✔ Allergy Panel</li>
+      <li>✔ Hormone Tests</li>
+      <li>✔ Pregnancy Test (Beta HCG)</li>
+      <li>✔ Semen Analysis</li>
+      <li>✔ Stool Test</li>
+      <li>✔ ECG & X-Ray</li>
+      <li>✔ Full Body Checkup Packages</li>
+      <li>✔ Child & Senior Citizen Packages</li>
+    </ul>
+  </div>
+</section>
+
+<section id="booking">
+  <div class="container">
+    <h2>Book a Test</h2>
+    <form id="bookingForm" action="https://formsubmit.co/roselab821988@gmail.com" method="POST" onsubmit="sendToWhatsApp();">
+      <input type="hidden" name="_captcha" value="false">
+      <label>Full Name:</label>
+      <input type="text" name="Name" id="name" required>
+      <label>Phone Number:</label>
+      <input type="tel" name="Phone" id="phone" required>
+      <label>Select Test:</label>
+      <input type="text" name="Test Name" id="test" required>
+      <label>Preferred Date:</label>
+      <input type="date" name="Preferred Date" id="date" required>
+      <label>Message (optional):</label>
+      <textarea name="Message" id="message" rows="4"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <h2>About Us</h2>
+    <p>Rose Lab Diagnostics Health Care Centre is committed to excellence in diagnostics. With highly experienced professionals and the latest technology, we deliver accurate test results with care and compassion.</p>
+    <p>We offer home sample collection, affordable packages, and fast reporting – because your health matters.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <p><strong>Booking Number:</strong> <a href="tel:9898389027">9898389027</a></p>
+    <p><strong>WhatsApp:</strong> <a href="https://wa.me/7977824758" target="_blank">7977824758</a></p>
+    <p><strong>Email:</strong> <a href="mailto:roselab821988@gmail.com">roselab821988@gmail.com</a></p>
+    <p><strong>Address:</strong> Shop No. 2, Vitthal Apartment, Opp. Vitthal Mandir, Wakipada Rickshaw Stand, Naigaon (East), Tal. Vasai, Dist. Palghar, MH-401208</p>
+    <h3>Find Us on Google Maps:</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.507223703309!2d72.85609687523442!3d19.390337481860436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7aa621f59b94f%3A0x3a9536727f9693f1!2sVitthal%20Mandir%2C%20Naigaon%20East%2C%20Vasai-Virar%2C%20Maharashtra%20401208!5e0!3m2!1sen!2sin!4v1711202364567" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2025 Rose Lab Diagnostics Health Care Centre. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<a href="https://wa.me/7977824758" class="whatsapp-btn" target="_blank">💬 WhatsApp Us</a>
+
+<script>
+  function sendToWhatsApp() {
+    const name = document.getElementById('name').value;
+    const phone = document.getElementById('phone').value;
+    const test = document.getElementById('test').value;
+    const date = document.getElementById('date').value;
+    const message = document.getElementById('message').value;
+    const text = `🧾 *Test Booking Request*\n\n👤 Name: ${name}\n📞 Phone: ${phone}\n🧪 Test: ${test}\n📅 Date: ${date}\n📝 Message: ${message}`;
+    const url = `https://wa.me/7977824758?text=${encodeURIComponent(text)}`;
+    window.open(url, '_blank');
+  }
+</script>
+
+</body>
+</html>
